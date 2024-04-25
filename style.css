@@ -1,0 +1,321 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+header {
+    padding-top: 0%;
+    width: 150%;
+    background-image: url(images/KALAA.png);
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+   
+}
+
+nav {
+    display: flex;
+    padding: 40px;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    left: 0%;
+    height: 20px;
+    z-index: 999;
+    width: 100%;
+    align-content:flex-start;  
+}
+
+nav img {
+    width: 95px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 6px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: green;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 500%;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*  image container */
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+/*  individual images */
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* active image */
+
+.image-container img.active {
+    opacity: 1;
+}
+
+
+/* ------About us------ */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+.description {
+    flex: 1;
+    padding: 20px;
+}
+
+.container h1 {
+    margin: 0;
+    display: block;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 0.80em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Style for navigation */
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.anchor-link {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+/* ---------What We Do---------- */
+
+.desc {
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    height: 100vh;
+    text-align: center;
+    background-image: url("images/blue.bg.jpg");
+}
+
+.desc h1 {
+    margin-top: 0;
+
+}
+
+.desc p {
+    font-size: 18px;
+    width: 999px;;
+    line-height: 2.5;
+    color: white;
+    text-align: center;
+    flex: 1;
+
+}
+
+/* Style for card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Style for individual cards */
+
+.card {
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for card images */
+
+.card img {
+    width: 100%;
+    height: fit-content;
+}
+
+/* --------Events--------- */
+
+.container2 {
+    height: 700px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
+
+/* Style for event schedule */
+
+.schedule {
+    flex: 1;
+}
+
+/* Style for calendar model */
+
+.calendar {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Style for event cards */
+
+.event-cards {
+    flex: 2;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    object-fit: cover;
+}
+
+/* Style for individual event card */
+
+.event-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* ----------Gallery---------- */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.event {
+    margin: 10px;
+    text-align: center;
+}
+
+.event img {
+    width: 200px; 
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+/* Style footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
