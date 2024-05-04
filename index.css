@@ -2,36 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+
     box-sizing: border-box;
 
 }
-header {
-    padding-top: 0%;
-    width: 150%;
-    background-image: url(images/KALAA.png);
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    position: sticky;
-    z-index: 1000;
-   
-}
 
-nav {
-    display: flex;
-    padding: 40px;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
+.bg-green{
     background-color: green;
-    left: 0%;
-    height: 50px;
-    z-index: 900;
-    width: 100%;
-    align-content:flex-start;  
-}
 
+}
 nav img {
     width: 80px;
 }
@@ -155,15 +134,7 @@ nav img {
 
 /* ------About us------ */
 
-.container {
-    
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-around;
-    height: 95vh;
 
-}
 
 .description {
     margin-top: 10px;
@@ -187,7 +158,6 @@ nav img {
 
 
 .logo {
-    margin-top: 120px;
     flex: 1;
     text-align: center;
 }
@@ -200,29 +170,23 @@ nav img {
 
 @keyframes slideAnimation {
     0% {
-        transform: translateX(0);
+        transform: translateX(0px);
     }
     100% {
-        transform: translateX(100px); /* Adjust the distance you want the image to move */
+        transform: translateX(60px); /* Adjust the distance you want the image to move */
     }
 }
 
 /* Style for navigation */
 
-nav {
+.navbar {
     text-align: center;
-    margin-top: 20px;
+    background-color: green !important;
+
 }
 
-nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
-}
 
-nav a:hover {
-    text-decoration: underline;
-}
+
 
 .anchor-link {
     display: block;
