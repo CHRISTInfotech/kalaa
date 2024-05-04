@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+  <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+<body>
+    
+   
+    <h1>Welcome to the Gallery Hub</h1>
+    <div class="gallery"></div>
+
+    
+
+
+
+
+<script>
+
+// JavaScript code to dynamically add images
+const gallery = document.querySelector('.gallery');
+
+// Replace image URLs with your actual image URLs
+const imageUrls = [
+    'images/philadelphia 1.jpg',
+    'images/philadelphia.webp',
+    'images/onam.jpeg',
+    'images/newyear.jpg',
+    'images/kathakali.jpg',
+    'images/kathakali.jpg',
+    'images/philadelphia.webp',
+    'images/philadelphia 1.jpg',
+    'images/onam.jpeg',
+    'images/kathakali.jpg',
+    'images/newyear.jpg',
+    'images/philadelphia.webp',
+    'images/onam.jpeg',
+    'images/philadelphia 1.jpg',
+    
+    
+
+    // Add more image URLs as needed
+];
+
+imageUrls.forEach(url => {
+    const img = document.createElement('img');
+    img.src = url;
+    gallery.appendChild(img);
+});
+
+
+</script>
+
+</body>
+</html>

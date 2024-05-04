@@ -4,9 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHILLY_MALAYALI_CLUB</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -14,42 +16,79 @@
 
 <body>
     <section class="header">
-        <nav class="nav" >
+        <nav class="nav">
             <a href="index.html"><img src="images/Logo.png"></a>
             <div class="nav-links" id="navLinks">
                 <div class="text-box">
                     <h1>കലാ PHILLY ASSOCIATION</h1>
                 </div>
-                <div>
-                    <a href="#home">Home</a>
+                <div >
+                    <a href="#home" >Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#do">what we Do</a>
-                    <a href="#events">Events</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#do">What We Do</a>
+                    <a href="#vs">Vision & Mission</a>
+                    
+
+                    <div class="dropdown" id="dropdown">
+                        <a href="events.html" onclick="toggleDropdown()">Events<i class="fa-solid fa-caret-down"></i></a>                        
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="#" onclick="showUpcomingEvents()">Upcoming Events</a>
+                            <a href="#" onclick="showPastEvents()">Past Events</a>
+                        </div>
+                    </div>
+                    
+                    <a href="gallery.html">Gallery</a>
+                    <a href="team.html">Team</a>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
                 </div>
-
-
-
             </div>
         </nav>
-
-
     </section>
-    <section class="home">
-        <!-- Anchor link for smooth scrolling -->
-        <a class="anchor-link" id="home"></a>
 
-        <div class="image-container">
-            <!-- Image 1 -->
+   <section class="home">
+    <a class="anchor-link" id="home"></a>
+    <div class="image-container">
+
+        <!-- Image 1 -->
+        <div class="image-wrapper">
             <img src="images/Philadelphia.webp" alt="Image 1" class="active">
+            <div class="image-text">
+                Rich heritage, Vibrant present
+            </div>
+        </div>
+            
             <!-- Image 2 -->
-            <img src="images/kerala1.jpg" alt="Image 2">
+            <div class="image-wrapper">
+            <img src="images/kathakali.jpg" alt="Image 2">
+            <div class="image-text">
+                A Jewel of enchanting beauty and rich cultural heritage.
+                </div>
+            </div>
+
             <!-- Image 3 -->
-            <img src="images/philadelphia 1.jpg" alt="Image 3">
+            <div class="image-wrapper">
+            <img src="images/sadhya.jpg" alt="Image 3">
+            <div class="image-text">
+                A Symbol of unity, cultural richness, and the spirit of togetherness.
+                </div>
+            </div>
+
             <!--Image 4-->
-            <img src="images/kerala-festivals.jpg" alt="Image 3">
+            <div class="image-wrapper">
+            <img src="images/philadelphia 1.jpg" alt="Image 4">
+            <div class="image-text">
+                Change the world, one kind act at a time.
+                </div>
+            </div>
+
+            <!--Image 5-->
+            <div class="image-wrapper">
+            <img src="images/onam.jpeg" alt="Image 5">
+            <div class="image-text">
+                Every hundred feet the world changes.
+                </div>
+            </div>
         </div>
 
 
@@ -58,22 +97,25 @@
 
     <section>
 
-        <div class="container">
-            <div id="about" class="description">
+        <div id="about" class="container ">
+            <div  class="description mt-5">
                 <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                   Nullam semper quam ac libero ullamcorper, eu lacinia nulla sodales.
-                   Fusce condimentum risus sit amet neque vehicula bibendum. Aenean eget risus magna.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                   Nullam semper quam ac libero ullamcorper, eu lacinia nulla sodales.
-                   Fusce condimentum risus sit amet neque vehicula bibendum. Aenean eget risus magna.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam semper quam ac libero ullamcorper, eu lacinia nulla sodales.
-                    Fusce condimentum risus sit amet neque vehicula bibendum. Aenean eget risus magna.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam semper quam ac libero ullamcorper, eu lacinia nulla sodales.
-                    Fusce condimentum risus sit amet neque vehicula bibendum. Aenean eget risus magna.</p>
-                            
+                
+                <p>Malayali Association of Delaware Valley, popularly know as Kalaa, was officially formed as<br>
+                     a community organization in October 1979. KALAA is an acronym for Kerala Art and Literary<br>
+                      Association of America.To bring together the Malayalees in the Delaware Valley and work<br> 
+                      for the social, cultural and educational advancement of its members and the community at<br>
+                       large was the goal of the founding members of the group.</p>
+                 <p>The beginning of Kalaa was the outcome of long discussions and negotiations. People worked together<br>
+                     in presenting the drama taunted the idea of starting a Malayalee association in Philadelphia. </p>
+                 <p>After many meetings and prolonged discussion, the organization formed in October 1979.Today<br>
+                    Kalaa is one of the largest Malayalee Associations in North America with more than four hundred <br>
+                    members.True to its original spirit, Kalaa has made extraordinary services to the Malayalee 
+                    community and the Indian community in general. Numerous cultural, literary and educational
+                     programs were coordinated by Kalaa. It also annually celebrated the major festivals of 
+                     Kerala Conducting Malayalam schools, presenting Malayalam movies and presenting guest 
+                     artists from Kerala are also in Kalaa’s activity list.  </p>
+                
             </div>
             <div class="logo">
                 <img src="images/Logo.png" alt="Logo">
@@ -82,143 +124,133 @@
 
     </section>
 
+
+
     <section>
         <div class="desc">
             <div id="do" class="descrption">
+
                 <h1>What We Do</h1>
-                <p>There are many variations of passages of Lorem Ipsum available,
-                    but the majority have suffered alteration in some form, by
-                    injected humour, or randomised words which don't look even
-                    slightly believable. If you are going to use a passage of
-                    Lorem Ipsum, you need to be sure there isn't anything
-                    embarrassing hidden in the middle of text. All the Lorem
-                    Ipsum generators on the Internet tend to repeat predefined
-                    chunks as necessary, making this the first true generator
-                    on the Internet. It uses a dictionary of over 200 Latin
-                    words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated
-                    Lorem Ipsum is therefore always free from repetition, injected
-                    humour, or non-characteristic words etc.</p>
 
-                <div class="card-container">
-                    <h3>Sponsers</h3>
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <img src="images/sponser1.webp" alt="Image 1">
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <img src="images/sponser1.webp" alt="Image 2">
-                    </div>
-                    <!-- Add more cards as needed -->
-                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 
+                     1500s, when an unknown printer took a galley of type and scrambled it
+                      to make a type specimen book. It has survived not only five centuries,
+                     but also the leap into electronic typesetting, remaining essentially
+                     unchanged. It was popularised in the 1960s with the release of Letraset
+                     sheets containing Lorem Ipsum passages, and more recently with desktop
+                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
             </div>
         </div>
 
     </section>
 
-    <section>
-        <div class="container2" id="events">
-            <div class="schedule">
-                <!-- Event schedule content goes here (calendar model) -->
-                <div class="calendar">
-                    <h2><u>Upcoming Events</u></h2>
 
-                    <h3>No UpComing events at the moment.</h3>
-
-                    <!-- <div class="event-details">
-                            <h3 class="event-name"></h3>
-                            <p>Date: January 15, 2024</p>
-                            <p>Venue: ABC Convention Center</p>
-                        </div> -->
+  <!-- ------Vision and Mission---------- -->
 
 
-                    <!-- Calendar model content -->
-                </div>
-            </div>
-            <h2>Past Events</h2>
-            <div class="event-cards">
-                
-                <!-- Past events (1st row) -->
-                <div class="event-card">
-                    <a href="gallery.html">
-                        <img src="images/onam.avif" alt="Past Event 1">
-                        <p>Onam</p>
-                    </a>
-                </div>
-                <div class="event-card">
-                    <a href="gallery.html">
-                        <img src="images/easter.webp" alt="Past Event 2">
-                        <p>Easter</p>
-                    </a>
-                </div>
-                <div class="event-card">
-                    <a href="gallery.html">
-                        <img src="images/newyear.jpg" alt="Past Event 3">
-                        <p>newyear</p>
-                    </a>
-                </div>
-
-                <!-- Latest events (2nd row) -->
-                <div class="event-card">
-                    <a href="gallery.html">
-                        <img src="images/vishu.jpeg" alt="Latest Event 1">
-                        <p>vishu</p>
-                    </a>
-                </div>
-                <div class="event-card">
-                    <a href="gallery.html">
-                        <img src="images/xmas.jpg" alt="Latest Event 2">
-                        <p>x-mas</p>
-                    </a>
-                </div>
-                <div class="event-card">
-                    <a href="gallery.html">
-                        <img src="images/Eid.jpeg" alt="Latest Event 3">
-                        <p>Eid</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-  <!-- ------Gallery---------- -->
-
-
-  <section class="gallery">
-    <div class="event">
-        <img src="images/onam.avif" alt="Event 1">
-        <p>Onam Celebration</p>
+  <section class="Vision-Mission mt-1" id="vs" >
+    <div >
+        <h1>Vision and Mission</h1>
+        <p>There are many variations of passages of Lorem Ipsum available, 
+           but the majority have suffered alteration in some form, by injected
+           humour, or randomised words which don't look even slightly believable.
+           If you are going to use a passage of Lorem Ipsum, you need to be sure
+           there isn't anything embarrassing hidden in the middle of text. All
+           the Lorem Ipsum generators on the Internet tend to repeat predefined
+           chunks as necessary, making this the first true generator on the Internet.
+           It uses a dictionary of over 200 Latin words, combined with a handful of
+           model sentence structures, to generate Lorem Ipsum which looks reasonable.
+           The generated Lorem Ipsum is therefore always free from repetition, injected 
+           humour, or non-characteristic words etc.</p>
     </div>
-    <div class="event">
-        <img src="images/xmas.jpg" alt="Event 2">
-        <p>Xmas Celebration </p>
-    </div>
-  
+
+
+   
 
 
 </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var images = document.querySelectorAll('.image-container img');
-            var currentIndex = 0;
 
-            function changeImage() {
-                images[currentIndex].classList.remove('active');
-                currentIndex = (currentIndex + 1) % images.length;
-                images[currentIndex].classList.add('active');
-            }
 
-            // Change image every 3 seconds (3000 milliseconds)
-            setInterval(changeImage, 3000);
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Your existing code for image slideshow and modal
+        var images = document.querySelectorAll('.image-container img');
+        var currentIndex = 0;
+        var texts = [
+            "Rich heritage, Vibrant present",
+            "A Jewel of enchanting beauty and rich cultural heritage.",
+            "A Symbol of unity, cultural richness, and the spirit of togetherness.",
+            "Change the world, one kind act at a time.",
+            "Every hundred feet the world changes."
+        ];
 
+        function changeImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+            updateText(); // Call updateText function after changing the image
+        }
+
+        // Function to update the text content
+        function updateText() {
+            var imageTexts = document.querySelectorAll('.image-text');
+            imageTexts.forEach((text, index) => {
+                if (index === currentIndex) {
+                    text.style.display = 'block'; // Show the text for the current image
+                } else {
+                    text.style.display = 'none'; // Hide the text for other images
+                }
+            });
+        }
+
+        // Change image and text every 3 seconds (3000 milliseconds)
+        setInterval(changeImage, 3000);
+
+        // Event listener to open modal when an image is clicked
+        images.forEach((image, index) => {
+            image.addEventListener('click', function () {
+                currentIndex = index; // Update current index
+                openModal(); // Open modal
+            });
         });
-        
-    </script>
 
+        // Open modal function
+        function openModal() {
+            var modal = document.querySelector('.modal');
+            var modalContent = document.querySelector('.modal-content');
+            modal.style.display = 'block';
+            modalContent.innerHTML = images[currentIndex].outerHTML;
+            updateText(); // Call updateText function when opening modal
+        }
+
+       
+
+        // Function to toggle dropdown
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown-content");
+            dropdownContent.classList.toggle("show");
+        }
+
+        // Function to show upcoming events
+        function showUpcomingEvents() {
+           
+            window.location.href = "upcoming_events.html";
+        }
+
+        // Function to show past events
+        function showPastEvents() {
+            window.location.href = "past_events.html";
+        }
+
+        // Event listener to toggle dropdown on click
+        var dropdown = document.getElementById("dropdown");
+        console.log("Dropdown:", dropdown);
+        dropdown.addEventListener("click", toggleDropdown);
+    });
+</script>
 
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
